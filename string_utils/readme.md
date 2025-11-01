@@ -4,7 +4,7 @@
 A minimal, memory-safe C string library that handles dynamic allocation internally. The user interacts only with char* strings and does not need to manage memory manually for temporary operations.
 
 ## Functions
-1. int stringLength(const char *text)
+### 1. int stringLength(const char *text)
 
 Description: Returns the length of a null-terminated string.
 
@@ -14,7 +14,7 @@ text — pointer to the string. Must not be NULL.
 Returns:
 Number of characters in the string, excluding the null terminator.
 
-2. char *stringCopy(const char *text)
+### 2. char *stringCopy(const char *text)
 
 Description: Creates a new dynamically allocated copy of the given string.
 
@@ -27,7 +27,7 @@ Pointer to the new string. Returns NULL if allocation fails.
 Notes:
 User must call stringFree() on the returned string when finished.
 
-3. void stringFree(char *text)
+### 3. void stringFree(char *text)
 
 Description: Frees a dynamically allocated string.
 
@@ -40,7 +40,7 @@ Nothing.
 Notes:
 Safe to call with NULL.
 
-4. char *stringConcat(const char *a, const char *b)
+### 4. char *stringConcat(const char *a, const char *b)
 
 Description: Concatenates two strings into a new dynamically allocated string.
 
@@ -55,7 +55,7 @@ Pointer to the concatenated string. Returns NULL if allocation fails.
 Notes:
 User must call stringFree() on the result.
 
-5. int startsWith(const char *text, const char *pattern)
+### 5. int startsWith(const char *text, const char *pattern)
 
 Description: Checks if text starts with pattern.
 
@@ -66,7 +66,7 @@ pattern — substring to compare
 Returns:
 1 if text starts with pattern, 0 otherwise.
 
-6. int endsWith(const char *text, const char *pattern)
+### 6. int endsWith(const char *text, const char *pattern)
 
 Description: Checks if text ends with pattern.
 
@@ -77,7 +77,7 @@ pattern — substring to compare
 Returns:
 1 if text ends with pattern, 0 otherwise.
 
-7. int containsSubstring(const char *text, const char *pattern)
+### 7. int containsSubstring(const char *text, const char *pattern)
 
 Description: Checks if pattern exists anywhere in text.
 
@@ -88,7 +88,7 @@ pattern — substring to find
 Returns:
 1 if pattern is found, 0 otherwise.
 
-8. void reverseString(char **text)
+### 8. void reverseString(char **text)
 
 Description: Reverses the string in-place using dynamic memory.
 
