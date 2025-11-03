@@ -4,8 +4,8 @@
 A minimal, memory-safe C string library that handles dynamic allocation internally. The user interacts only with char* strings and does not need to manage memory manually for temporary operations.
 
 ## Functions
-###- [ ] 1. int stringLength(const char *text)
-
+### 1. int stringLength(const char *text)
+- [ ]
 Description: Returns the length of a null-terminated string.
 
 Parameters:
