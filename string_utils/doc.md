@@ -12,7 +12,7 @@ text — pointer to a string previously returned by a library function (stringCo
 
 Returns:
 Nothing.
-- [ ] 1. int stringLength(const char *text)
+- [x] 1. int stringLength(const char *text)
 
 Description: Returns the length of a null-terminated string.
 
