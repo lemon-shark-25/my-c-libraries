@@ -1,9 +1,17 @@
-
+# THE IMPLEMENTATION HAS CHANGED AND THIS DOC IS NO LONGER VALID
 # String Utils Library Documentation
 
 A minimal, memory-safe C string library that handles dynamic allocation internally. The user interacts only with char* strings and does not need to manage memory manually for temporary operations.
 
 ## Functions
+- [x] 0. String *createString(const char *text)
+Description: Creates a pointer to a string with the given text.
+
+Parameters:
+text — pointer to a string previously returned by a library function (stringCopy, stringConcat, reverseString, etc.).
+
+Returns:
+Nothing.
 - [ ] 1. int stringLength(const char *text)
 
 Description: Returns the length of a null-terminated string.
@@ -27,7 +35,7 @@ Pointer to the new string. Returns NULL if allocation fails.
 Notes:
 User must call stringFree() on the returned string when finished.
 
-- [ ] 3. void stringFree(char *text)
+- [x] 3. void stringFree(char *text)
 
 Description: Frees a dynamically allocated string.
 
